@@ -133,7 +133,7 @@ function renderPricing() {
             <span>${f}</span>
           </div>`).join('')}
       </div>
-      <a href="/workspace.html" class="btn ${p.featured ? 'btn-primary' : 'btn-ghost'}">
+      <a href="/workspace/" class="btn ${p.featured ? 'btn-primary' : 'btn-ghost'}">
         ${p.name === 'Starter' ? 'Start Free' : `Get ${p.name}`}
       </a>
     </div>`).join('');
@@ -226,7 +226,7 @@ function initHeroGenerate() {
   
   btn.addEventListener('click', () => {
     const promptText = typingEl.textContent || 'A dark emotional cinematic trailer';
-    window.location.href = `/workspace.html?prompt=${encodeURIComponent(promptText)}&autoStart=true`;
+    window.location.href = `/workspace/?prompt=${encodeURIComponent(promptText)}&autoStart=true`;
   });
 }
 
